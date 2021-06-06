@@ -73,6 +73,3 @@ I believe I can generate even more accurate data if I were able to take every po
 In the future I would also recommend to try different types of models, possibly some boosting/KNN/tree to see what types of results those models bring. It would also be interesting to try out some other vectorizers outside of CountVectorizer and TfdifVectorizer.
 
 Exploring different ways to Tokenize/Lemmatize/Clean the data I'm sure would yield different and intersting results as well. (i.e. spacy)
-
-
-# Reddit-Classification-Project-
