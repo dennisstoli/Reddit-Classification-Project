@@ -1,4 +1,4 @@
-Reddit Classification Project: Analyzing r/bitcoin and r/wallstreetbets
+# Reddit Classification Project: Analyzing r/bitcoin and r/wallstreetbets
 
 0) Problem Statement
    
