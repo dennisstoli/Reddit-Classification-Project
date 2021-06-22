@@ -1,13 +1,13 @@
 # Reddit Classification Project: Analyzing r/bitcoin and r/wallstreetbets
 
-0) Problem Statement
+## Problem Statement
    
 Can we accurately predict a subreddit from a reddit post's title using classification modeling?
 We will use Naive Bayes and Logistic Regression as our clasifiers to develop our models.
 Sucess will be evaluated on our accuracy of predicting which post is from which subreddit.
 It's interesting to see if there are particular words/phrases that separate one subreddit from another, and if there is any commonality between them as well.
 
-1) Executive Summary
+## Executive Summary
     
 I gathered/collected our subreddit data using api requests and pushshift, and built a function to collect data in sets of 100 to then place that data into a dataframe.
 I then concatenated the data together from each subreddit into one single dataframe. We were interested in the subreddits r/bitcoin and r/wallstreetbets, two subreddits focused on investing, but fairly different im pther aspects.
@@ -18,7 +18,7 @@ I preproccesed our subreddit Data, train-test-split our X and y variables, and c
 
 
 
-2) Table of Contents
+## Table of Contents
 
 [Data Collection](code/01_Data_Collection.ipynb)
 
@@ -36,7 +36,7 @@ I preproccesed our subreddit Data, train-test-split our X and y variables, and c
 
 [Presentation](presentation/Reddit_Presentation.pdf)
    
-3) Data and Data Dictionary
+## Data and Data Dictionary
 
 DESCRIPTIVE ABSTRACT: Data set contains public information from the website reddit.com, where individuals can anonymously post on any subject.
 
@@ -52,7 +52,7 @@ https://reddit.com/r/bitcoin , https://reddit.com/r/wallstreetbets
 |**title_word_count**|*int*|subreddit_df|The word count of the title.
 |**clean_title**|*object*|subreddit_df|The clean titles created from the original titles, removing emojis, capitalization, formatting, spacing, etc.
 
-4) Conclusions and Recommendation
+## Conclusions and Recommendation
 
 We can accurately predict which subreddit a title is from with an accuracy over 85%, a great achievement.
 These subreddits are fairly similar, but with particular individual characteristics we are able to predict accurately.
@@ -66,7 +66,7 @@ r/bitcoin focuses more on investing/studying bitcoin, r/wallstreetbets focuses m
 
 If conducting a similar project with different subreddits, I would recommend gathering over 10,000 data entries and to clean the data very thoroughly. Use different modeling techniques as well to get the best accuracy possible.
 
-5) Areas for Further Research/Study
+## Areas for Further Research/Study
 
 I believe I can generate even more accurate data if I were able to take every post from each subreddit since its inception efficiently. Currently I do not have the knowledge to do that quickly, and that would be very interesting to see the difference between that data and the data I gathered. Also, time periods are interesting as well, currently the stock mvis is a popular keyword in r/wallstreetsbets, but a year from now a different keyword will replace it, dividing the data by time periods and doing separate analysis in that way would be intriguing as well.
 
